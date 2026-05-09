@@ -5,51 +5,110 @@ body {
   font-family: "Agency FB", "Oswald", sans-serif;
 }
 
+.hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  margin: 10px 0;
+  color: rgb(149, 149, 149);
+}
+
+.hero span {
+  font-size: 0.9rem;
+  color: rgb(120, 120, 120);
+}
+
 .container {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 0 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
   border: 1px solid rgb(149, 149, 149);
   padding: 25px;
   border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
-
-.subtitle {
-  color: rgb(149, 149, 149);
-  margin: 5px 0;
-}
-
-.tagline {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: rgb(149, 149, 149);
+.card:hover {
+  transform: translateY(-4px);
+  border-color: white;
 }
 
 h2 {
   margin-top: 0;
-  font-size: 1.2rem;
-  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item {
+  border: 1px solid rgb(149, 149, 149);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.item:hover {
+  background: rgb(50, 50, 50);
 }
 
 .project {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 15px;
+  padding-left: 10px;
   border-left: 1px solid rgb(149, 149, 149);
 }
 
-.project span {
-  display: block;
-  font-weight: bold;
+.project h3 {
+  margin: 0;
+}
+
+.fade {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.fade:nth-child(1) { animation-delay: 0.1s; }
+.fade:nth-child(2) { animation-delay: 0.2s; }
+.fade:nth-child(3) { animation-delay: 0.3s; }
+.fade:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
