@@ -1,67 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
-  color: white;
+  height: 100vh;
+  background: rgb(31, 31, 31);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  font-family: "Agency FB", "Oswald", sans-serif;
+  color: white;
 }
 
-.container {
+.box {
   text-align: center;
-}
-
-/* card */
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-  max-width: 400px;
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #4cc9f0, #f72585);
-  box-shadow: 0 0 20px #4cc9f0, 0 0 40px #f72585;
+  padding: 40px 60px;
+  border: 1px solid rgb(149, 149, 149);
+  border-radius: 10px;
+  background: transparent;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
-.subtitle {
-  color: #aaa;
-  margin-top: 5px;
-  font-size: 0.9rem;
-}
-
-.desc {
-  margin: 20px 0;
-  color: #ccc;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.links a {
-  display: inline-block;
-  margin: 5px;
-  padding: 8px 14px;
-  text-decoration: none;
-  color: white;
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.links a:hover {
-  background: linear-gradient(135deg, #4cc9f0, #f72585);
-  border-color: transparent;
+p {
+  margin-top: 10px;
+  color: rgb(149, 149, 149);
+  font-size: 1rem;
 }
